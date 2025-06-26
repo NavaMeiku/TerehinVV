@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Молодежный Центр Ступино</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Logo.jpg">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ВАШ_API_КЛЮЧ" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="logo-text">
+                        МОЛОДЕЖНЫЙ ЦЕНТР
+                        <span>г.о. Ступино Московской области</span>
+                    </div>
+                </div>
+                <div class="contacts-header">
+                    <a href="tel:+74956401234"><i class="fas fa-phone"></i> +7 (496) 644-90-36</a>
+                    <a href="mailto:molcentr@stupino.ru"><i class="fas fa-envelope"></i>munmc@gmail.com</a>
+                </div>
+            </div>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link active">Контакты</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Мероприятия</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Новости</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero"
+        style="background: linear-gradient(rgba(0, 85, 164, 0.8), rgba(0, 85, 164, 0.9)), url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами, чтобы узнать больше о наших программах и мероприятиях</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Адрес:</strong><br>
+                                142800, Московская обл., г.Ступино,<br>
+                                ул. Горького, д.16
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Телефон:</strong><br>
+                                +7 (496) 644-90-36
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                munmc@gmail.com
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Часы работы:</strong><br>
+                                Пн-Пт: 9:00 - 21:00<br>
+                                Сб-Вс: 13:00 - 21:00 <br>
+                                Обед: с 13:00 - 14:00
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Мы в социальных сетях</h3>
+                    <div class="social-links">
+                        <a href="https://vk.com/club_oka_ru" class="social-link"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Как нас найти</h3>
+                    <div class="map">
+                        <div id="map"></div>
+                    </div>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <h3>Форма обратной связи</h3>
+                        <form style="display: grid; gap: 15px;">
+                            <input type="text" placeholder="Ваше имя"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            <input type="email" placeholder="Ваш email"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            <input type="tel" placeholder="Ваш телефон"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            <textarea placeholder="Ваше сообщение" rows="4"
+                                style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
+                            <button type="submit" class="btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Молодежный центр</h3>
+                    <p>Создаем условия для развития и самореализации молодежи городского округа Ступино Московской
+                        области.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html" class="active">Контакты</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Наши программы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Образовательные курсы</a></li>
+                        <li><a href="#">Творческие студии</a></li>
+                        <li><a href="#">Спортивные секции</a></li>
+                        <li><a href="#">Волонтерство</a></li>
+                        <li><a href="#">Карьерные консультации</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li><a href="munmc@gmail.com"><i class="fas fa-map-marker-alt"></i> 142800, Московская обл., г.Ступино, ул.
+                                Горького, д.16</a></li>
+                        <li><a href="tel:+74956401234"><i class="fas fa-phone"></i> +7 (496) 644-90-36</a></li>
+                        <li><a href="mailto:molcentr@stupino.ru"><i class="fas fa-envelope"></i>munmc@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Структурное подразделение "Металлург" МБУ РМ "МЦ"
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
